@@ -13,10 +13,10 @@ export default {
 
 export const listButton = () => (
   <StyledContainer>
-    <Button type="primary" variant="contained" text="Primary Button" />
-    <Button type="secondary" variant="contained" text="SECONDARY BUTTON" />
-    <Button type="success" variant="contained" text="SUCCESS BUTTON" />
-    <Button type="warning" variant="contained" text="WARNING BUTTON" />
+    <Button type="primary" variant="contained" text="PRIMARY BUTTON" disableHover />
+    <Button type=" iconAfterLinkColor" variant="contained" text="SECONDARY BUTTON" disableHover  />
+    <Button type="success" variant="contained" text="SUCCESS BUTTON" disableHover  />
+    <Button type="warning" variant="contained" text="WARNING BUTTON" disableHover />
     </StyledContainer>
 );
 
@@ -50,6 +50,7 @@ export const IconButtons = () => (
       variant="contained"
       text="SAVE BUTTON"
       icon={<FaSave />}
+      disableHover
     />
   </StyledContainer>
 );

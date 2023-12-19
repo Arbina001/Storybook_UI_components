@@ -9,8 +9,10 @@ export const StyledButtonComponent = styled.button`
 
   ${({ type, isOutline, border }) => css`
     background-color: ${isOutline ? 'transparent' : theme?.[type]};
-    color: ${isOutline ? theme?.[type] : theme.white};
-    border: ${border || '1px solid'};
+    color: ${isOutline ? theme?.[type] : 'white'};
+    border-color: ${border || '1px solid'};
+    font-style:italic;
+  
   `}
 
   padding: 10px 20px;
@@ -20,7 +22,7 @@ export const StyledButtonComponent = styled.button`
 
   ${({ type, isOutline, disableHover }) => css`
     background-color: ${isOutline ? 'transparent' : theme?.[type]};
-    color: ${isOutline ? theme?.[type] : theme.white};
+    color: ${isOutline ? theme?.[type] : 'white'};
 
     ${!disableHover &&
     css`
