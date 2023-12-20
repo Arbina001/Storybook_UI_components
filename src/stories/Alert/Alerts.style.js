@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import theme from '../../theme';
 
 export const AlertStyle = styled.button`
-  /* text-transform: uppercase; */
   font-size: 1.4;
   font-weight: 600;
   border: 2px solid;
@@ -12,7 +11,7 @@ export const AlertStyle = styled.button`
     background-color: ${isOutline ? 'transparent' : theme?.[type]};
     color: ${isOutline ? theme?.[type] : 'white'};
     border-color: ${border || '1px solid'};
-    font-style:italic;
+    font-style: italic;
   `}
   padding: 10px 20px;
   text-align: left;
@@ -32,11 +31,8 @@ export const AlertStyle = styled.button`
   `}
 `;
 
-export const StyledContainer=styled.div`
-display: flex;
+export const StyledContainer = styled.div`
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
 `;
-
-
-
