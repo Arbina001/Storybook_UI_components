@@ -1,42 +1,52 @@
-import styled, { css } from 'styled-components';
-import theme from '../../theme';
+
+import styled, { css } from "styled-components";
+import theme from "../../theme";
+
 
 export const StyledButtonComponent = styled.button`
   text-transform: uppercase;
-  font-size: 1.4;
+  border: 2px solid ${theme.white};
+  font-style:italic;
+
+
+  font-size: 1rem;
   font-weight: 600;
-  border: 2px solid;
+  background-color: ${({ choosecolor }) =>
+    choosecolor === "secondary" ? theme.basiccolor : theme?.[choosecolor]};
 
-  ${({ type, isOutline, border }) => css`
-    background-color: ${isOutline ? 'transparent' : theme?.[type]};
-    color: ${isOutline ? theme?.[type] : 'white'};
-    border-color: ${border || '1px solid'};
-    font-style:italic;
-  
-  `}
 
+  color: ${({ choosecolor }) =>
+    choosecolor === "secondary" ? theme?.[choosecolor] : theme.basiccolor};
+
+
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-
-  ${({ type, isOutline, disableHover }) => css`
-    background-color: ${isOutline ? 'transparent' : theme?.[type]};
-    color: ${isOutline ? theme?.[type] : 'white'};
-
-    ${!disableHover &&
-    css`
-      &:hover,
-      &:active {
-        background-color: ${isOutline ? theme?.[type] : theme?.[type]};
-        color: white;
-      }
-    `}
-  `}
 `;
+
+
+export const OutlineButtons = styled(StyledButtonComponent)`
+  border: 2px solid ${({ choosecolor }) => theme?.[choosecolor]};
+  background-color: ${theme.basiccolor};
+  color: ${({ choosecolor }) => theme?.[choosecolor]};
+  &:hover,
+  &:active {
+    background-color: ${({ choosecolor }) => theme?.[choosecolor]};
+    color: ${theme.basiccolor};
+  }
+`;
+export const TextButtons = styled(StyledButtonComponent)`
+  color: ${({ choosecolor }) => theme?.[choosecolor]};
+  border: 2px solid transparent;
+  background-color: transparent;
+`;
+
 
 export const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 `;
