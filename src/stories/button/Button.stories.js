@@ -1,24 +1,21 @@
-import React from "react";
-import { FaSave } from "react-icons/fa";
-import Button from ".//Buttons";
-import { StyledContainer } from "./Buttons.style";
-
+import React from 'react';
+import { FaSave } from 'react-icons/fa';
+import Button from './Button';
+import { StyledContainer } from './Button.style';
 
 export default {
-  title: "Buttons",
+  title: 'Buttons',
   component: Button,
 };
 
-
-export const listButton = () => (
+export const ListButton = () => (
   <StyledContainer>
-    <Button type="primary" variant="contained" text="Primary Button" />
+    <Button type="primary" variant="contained" text="PRIMARY BUTTON" />
     <Button type="secondary" variant="contained" text="SECONDARY BUTTON" />
     <Button type="success" variant="contained" text="SUCCESS BUTTON" />
     <Button type="warning" variant="contained" text="WARNING BUTTON" />
   </StyledContainer>
 );
-
 
 export const OutlineButtons = () => (
   <StyledContainer>
@@ -28,7 +25,6 @@ export const OutlineButtons = () => (
     <Button type="warning" variant="outlined" text="WARNING BUTTON" />
   </StyledContainer>
 );
-
 
 export const IconButtons = () => (
   <StyledContainer>
@@ -47,11 +43,14 @@ export const IconButtons = () => (
   </StyledContainer>
 );
 
-
 export const TextButtons = () => (
   <StyledContainer>
     <Button type="primary" variant="TextButton" text="PIRMARY LINK BUTTON" />
-    <Button type="secondary" variant="TextButton" text="SECONDARY LINK BUTTON"/>
+    <Button
+      type="secondary"
+      variant="TextButton"
+      text="SECONDARY LINK BUTTON"
+    />
     <Button type="success" variant="TextButton" text="SUCCESS LINK BUTTON" />
     <Button type="warning" variant="TextButton" text="WARNING LINK BUTTON" />
   </StyledContainer>

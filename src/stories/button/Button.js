@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   StyledButtonComponent,
   OutlineButtons,
-  TextButtons
-} from "./Buttons.style";
-
+  TextButtons,
+} from './Button.style';
 
 const Button = ({ type, variant, text, icon }) => {
-  if (variant === "contained") {
+  if (variant === 'contained') {
     return (
       <StyledButtonComponent type={type}>
         {icon} {text}
@@ -15,21 +14,18 @@ const Button = ({ type, variant, text, icon }) => {
     );
   }
 
-
-  if (variant === "outlined") {
+  if (variant === 'outlined') {
     return (
       <OutlineButtons type={type}>
         {icon} {text}
       </OutlineButtons>
     );
   }
-  if (variant === "TextButton") {
+  if (variant === 'TextButton') {
     return <TextButtons type={type}>{text}</TextButtons>;
   }
 
-
   return null;
 };
-
 
 export default Button;
