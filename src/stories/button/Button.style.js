@@ -32,7 +32,6 @@ export const OutlineButtons = styled(StyledButtonComponent)`
     color: ${theme.basiccolor};
   }
 `;
-
 export const TextButtons = styled(StyledButtonComponent)`
   color: ${({ type }) => theme?.[type]};
   border: 2px solid transparent;

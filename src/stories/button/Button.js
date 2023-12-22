@@ -2,7 +2,7 @@ import React from 'react';
 import {
   StyledButtonComponent,
   OutlineButtons,
-  TextButtons,
+  TextButtons 
 } from './Button.style';
 
 const Button = ({ type, variant, text, icon }) => {
@@ -21,7 +21,7 @@ const Button = ({ type, variant, text, icon }) => {
       </OutlineButtons>
     );
   }
-  if (variant === 'TextButton') {
+  if (variant === 'text') {
     return <TextButtons type={type}>{text}</TextButtons>;
   }
 
