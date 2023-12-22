@@ -6,7 +6,7 @@ import {
   BadgeForIcon,
   IconImageBadge,
   ImageContainer,
-} from './Badges.style';
+} from '../../stories/Badges/Badges.style';
 
 const Badge = ({ url, size, variant, colortype, text }) => {
   if (variant === 'square') {
