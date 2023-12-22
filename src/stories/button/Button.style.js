@@ -1,23 +1,18 @@
-
-import styled, { css } from "styled-components";
-import theme from "../../theme";
-
+import styled, { css } from 'styled-components';
+import theme from '../../theme';
 
 export const StyledButtonComponent = styled.button`
   text-transform: uppercase;
   border: 2px solid ${theme.white};
-  font-style:italic;
+  font-style: italic;
 
-
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: 600;
   background-color: ${({ type }) =>
-    type === "secondary" ? theme.basiccolor : theme?.[type]};
-
+    type === 'secondary' ? theme.basiccolor : theme?.[type]};
 
   color: ${({ type }) =>
-    type === "secondary" ? theme?.[type] : theme.basiccolor};
-
+    type === 'secondary' ? theme?.[type] : theme.basiccolor};
 
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -26,7 +21,6 @@ export const StyledButtonComponent = styled.button`
   text-decoration: none;
   cursor: pointer;
 `;
-
 
 export const OutlineButtons = styled(StyledButtonComponent)`
   border: 2px solid ${({ type }) => theme?.[type]};
@@ -38,12 +32,12 @@ export const OutlineButtons = styled(StyledButtonComponent)`
     color: ${theme.basiccolor};
   }
 `;
+
 export const TextButtons = styled(StyledButtonComponent)`
-  color: ${({ type}) => theme?.[type]};
+  color: ${({ type }) => theme?.[type]};
   border: 2px solid transparent;
   background-color: transparent;
 `;
-
 
 export const StyledContainer = styled.div`
   display: flex;
