@@ -9,7 +9,7 @@ import {
 const Button = ({ type, variant, text, icon }) => {
   if (variant === "contained") {
     return (
-      <StyledButtonComponent typecolor={type}>
+      <StyledButtonComponent type={type}>
         {icon} {text}
       </StyledButtonComponent>
     );
@@ -18,13 +18,13 @@ const Button = ({ type, variant, text, icon }) => {
 
   if (variant === "outlined") {
     return (
-      <OutlineButtons typecolor={type}>
+      <OutlineButtons type={type}>
         {icon} {text}
       </OutlineButtons>
     );
   }
   if (variant === "TextButton") {
-    return <TextButtons typecolor={type}>{text}</TextButtons>;
+    return <TextButtons type={type}>{text}</TextButtons>;
   }
 
 
