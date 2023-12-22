@@ -12,9 +12,9 @@ const Badge = ({ url, size, variant, colortype, text }) => {
   if (variant === 'square') {
     return (
       <Mainphoto>
-        <AvatarImage size={size} src={url} alt="avatar" />
+        <AvatarImage size={size} src={url} alt="avatar new" />
         <BadgeIcon colortype={colortype} />
-      </Mainphoto> 
+      </Mainphoto>
     );
   }
   if (variant === 'iconBadge') {
