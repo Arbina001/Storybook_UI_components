@@ -11,12 +11,12 @@ export const StyledButtonComponent = styled.button`
 
   font-size: 1rem;
   font-weight: 600;
-  background-color: ${({ choosecolor }) =>
-    choosecolor === "secondary" ? theme.basiccolor : theme?.[choosecolor]};
+  background-color: ${({ typecolor }) =>
+    typecolor === "secondary" ? theme.basiccolor : theme?.[typecolor]};
 
 
-  color: ${({ choosecolor }) =>
-    choosecolor === "secondary" ? theme?.[choosecolor] : theme.basiccolor};
+  color: ${({ typecolor }) =>
+    typecolor === "secondary" ? theme?.[typecolor] : theme.basiccolor};
 
 
   border-top-left-radius: 2px;
@@ -29,17 +29,17 @@ export const StyledButtonComponent = styled.button`
 
 
 export const OutlineButtons = styled(StyledButtonComponent)`
-  border: 2px solid ${({ choosecolor }) => theme?.[choosecolor]};
+  border: 2px solid ${({ typecolor }) => theme?.[typecolor]};
   background-color: ${theme.basiccolor};
-  color: ${({ choosecolor }) => theme?.[choosecolor]};
+  color: ${({ typecolor }) => theme?.[typecolor]};
   &:hover,
   &:active {
-    background-color: ${({ choosecolor }) => theme?.[choosecolor]};
+    background-color: ${({ typecolor }) => theme?.[typecolor]};
     color: ${theme.basiccolor};
   }
 `;
 export const TextButtons = styled(StyledButtonComponent)`
-  color: ${({ choosecolor }) => theme?.[choosecolor]};
+  color: ${({ typecolor }) => theme?.[typecolor]};
   border: 2px solid transparent;
   background-color: transparent;
 `;
