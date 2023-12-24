@@ -1,11 +1,11 @@
-import React from "react";
-import { StyledTypographyComponent } from "./typography.style";
+import React from 'react';
+import { TextInput } from './Typography.style';
 
-const Typography = ({ variant, text, color }) => {
+const Typography = ({ headingTag, text, type }) => {
   return (
-    <StyledTypographyComponent variant={variant} color={color}>
+    <TextInput as={headingTag} type={type}>
       {text}
-    </StyledTypographyComponent>
+    </TextInput>
   );
 };
 
