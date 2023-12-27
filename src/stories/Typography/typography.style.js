@@ -49,6 +49,7 @@ export const TextInput = styled.div`
 
 export const TextContainer = styled.div`
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   align-items: center;
 `;
