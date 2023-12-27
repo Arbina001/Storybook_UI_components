@@ -1,11 +1,11 @@
 import React from 'react';
-import { TextInput } from './Typography.style';
+import { StyledTextInput } from './Typography.styled';
 
 const Typography = ({ as, text, type }) => {
   return (
-    <TextInput as={as} type={type}>
+    <StyledTextInput as={as} type={type}>
       {text}
-    </TextInput>
+    </StyledTextInput>
   );
 };
 

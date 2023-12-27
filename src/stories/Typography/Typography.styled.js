@@ -8,14 +8,14 @@ const baseStyles = css`
   font-family: sans-serif;
 `;
 
-export const TextInput = styled.div`
+export const StyledTextInput = styled.div`
   ${baseStyles}
   font-size: ${({ as }) => size?.[as]?.fontSize};
   line-height: ${({ as }) => size?.[as]?.lineHeight};
   font-weight: ${({ as }) => size?.[as]?.fontWeight};
 `;
 
-export const TextContainer = styled.div`
+export const StyledTextContainer = styled.div`
   display: flex;
   gap: 1rem;
   flex-direction: column;
