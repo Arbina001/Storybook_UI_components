@@ -14,8 +14,7 @@ export const StyledButtonComponent = styled.button`
   color: ${({ color }) =>
     color === 'secondary' ? theme?.[color] : theme.whitecolor};
 
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-radius: 2px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
