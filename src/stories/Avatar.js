@@ -1,6 +1,6 @@
-import React from "react";
-import {Mainphoto} from './Avatar.Styled';
+import React from 'react';
+import { AvatarImage } from './Avatar.Styled';
 
 export const Avatar = ({ url, Size, variant }) => {
-  return <Mainphoto src={url} Size={Size} shape={variant} />;
+  return <AvatarImage src={url} Size={Size} shape={variant} />;
 };

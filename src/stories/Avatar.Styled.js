@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
-export const AvatarContainer = styled.div`
+export const StyledAvatarContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -8,11 +8,11 @@ export const AvatarContainer = styled.div`
   align-items: center;
 `;
 
-export const Mainphoto = styled.img`
+export const AvatarImage = styled.img`
   ${({ Size }) => css`
     height: ${Size}rem;
   `};
   ${({ shape }) => css`
-    border-radius: ${shape === "circle" ? "50%" : "20%"};
+    border-radius: ${shape === 'circle' ? '50%' : '20%'};
   `}
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "./Avatar";
-import { AvatarContainer } from "./Avatar.Styled";
+import { StyledAvatarContainer } from "./Avatar.Styled";
 
 export default {
   title: "Avatar",
@@ -8,17 +8,17 @@ export default {
 };
 
 export const SquareProfile = () => (
-  <AvatarContainer>
+  <StyledAvatarContainer>
     <Avatar url="https://i.pravatar.cc/40" Size={2.4} variant="square" />
     <Avatar url="https://i.pravatar.cc/60" Size={3.4} variant="square" />
     <Avatar url="https://i.pravatar.cc/80" Size={4.4} variant="square" />
-  </AvatarContainer>
+  </StyledAvatarContainer>
 );
 
 export const CircularProfileAvatar = () => (
-  <AvatarContainer>
+  <StyledAvatarContainer>
     <Avatar url="https://i.pravatar.cc/40" Size={2.4} variant="circle" />
     <Avatar url="https://i.pravatar.cc/60" Size={3.4} variant="circle" />
     <Avatar url="https://i.pravatar.cc/80" Size={4.4} variant="circle" />
-  </AvatarContainer>
+  </StyledAvatarContainer>
 );
