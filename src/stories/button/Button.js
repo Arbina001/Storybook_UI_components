@@ -2,13 +2,13 @@ import React from 'react';
 import {
   StyledButtonComponent,
   OutlineButtons,
-  TextButtons 
+  TextButtons,
 } from './Button.style';
 
-const Button = ({ type, variant, text, icon }) => {
+const Button = ({ color, variant, text, icon }) => {
   if (variant === 'contained') {
     return (
-      <StyledButtonComponent type={type}>
+      <StyledButtonComponent color={color}>
         {icon} {text}
       </StyledButtonComponent>
     );
@@ -16,13 +16,13 @@ const Button = ({ type, variant, text, icon }) => {
 
   if (variant === 'outlined') {
     return (
-      <OutlineButtons type={type}>
+      <OutlineButtons color={color}>
         {icon} {text}
       </OutlineButtons>
     );
   }
   if (variant === 'text') {
-    return <TextButtons type={type}>{text}</TextButtons>;
+    return <TextButtons color={color}>{text}</TextButtons>;
   }
 
   return null;

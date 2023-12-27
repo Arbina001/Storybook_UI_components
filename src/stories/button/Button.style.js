@@ -8,11 +8,11 @@ export const StyledButtonComponent = styled.button`
 
   font-size: 1rem;
   font-weight: 600;
-  background-color: ${({ type }) =>
-    type === 'secondary' ? theme.basiccolor : theme?.[type]};
+  background-color: ${({ color }) =>
+    color === 'secondary' ? theme.whitecolor : theme?.[color]};
 
-  color: ${({ type }) =>
-    type === 'secondary' ? theme?.[type] : theme.basiccolor};
+  color: ${({ color }) =>
+    color === 'secondary' ? theme?.[color] : theme.whitecolor};
 
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -23,17 +23,17 @@ export const StyledButtonComponent = styled.button`
 `;
 
 export const OutlineButtons = styled(StyledButtonComponent)`
-  border: 2px solid ${({ type }) => theme?.[type]};
-  background-color: ${theme.basiccolor};
-  color: ${({ type }) => theme?.[type]};
+  border: 2px solid ${({ color }) => theme?.[color]};
+  background-color: ${theme.whitecolor};
+  color: ${({ color }) => theme?.[color]};
   &:hover,
   &:active {
-    background-color: ${({ type }) => theme?.[type]};
-    color: ${theme.basiccolor};
+    background-color: ${({ color }) => theme?.[color]};
+    color: ${theme.whitecolor};
   }
 `;
 export const TextButtons = styled(StyledButtonComponent)`
-  color: ${({ type }) => theme?.[type]};
+  color: ${({ color }) => theme?.[color]};
   border: 2px solid transparent;
   background-color: transparent;
 `;
