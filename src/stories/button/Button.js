@@ -21,11 +21,8 @@ const Button = ({ color, type, text, icon }) => {
       </OutlineButtons>
     );
   }
-  if (type === 'text') {
-    return <TextButtons color={color}>{text}</TextButtons>;
-  }
 
-  return null;
+  return <TextButtons color={color}>{text}</TextButtons>;
 };
 
 export default Button;
