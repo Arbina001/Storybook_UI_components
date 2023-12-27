@@ -1,9 +1,9 @@
 import React from 'react';
 import { TextInput } from './Typography.style';
 
-const Typography = ({ headingTag, text, type }) => {
+ const Typography = ({ htmlTag, text, type }) => {
   return (
-    <TextInput as={headingTag} type={type}>
+    <TextInput as={htmlTag} type={type}>
       {text}
     </TextInput>
   );
