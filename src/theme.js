@@ -1,5 +1,3 @@
-//
-// theme.js
 const theme = {
   primary: '#FF4E54',
   secondary: '#FF8242',
@@ -17,6 +15,6 @@ const theme = {
   buttonOutlinedSecondaryColorHover: '#fff',
   danger: '#FF3D00',
   badgeText: '#fff',
-  // white:"fff"
+  
 };
 export default theme;
