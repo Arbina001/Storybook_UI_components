@@ -1,69 +1,65 @@
-import React from 'react';
-import { AlertComponent } from './Alerts';
-import { StyledContainer } from './Alerts.style';
+import React from "react";
+import { AlertComponent } from "./Alerts";
+import { AlertContainer } from "./Alerts.style";
+
+
 export default {
-  title: 'Alert',
+  title: "Alert",
   component: AlertComponent,
 };
 
-export const SimpleAlerts = () => (
-  <div>
+
+export const ContainedAlert = () => (
+  <AlertContainer>
     <AlertComponent
       type="primary"
       variant="contained"
       text="Primary! This is a Primary Alert - Check it now!"
-      disableHover
     />
     <AlertComponent
       type="secondary"
       variant="contained"
-      text="Secondary! This is a Secondary Alert - Check it now!"
-      disableHover
+      text="secondary! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="success"
       variant="contained"
-      text="Success! This is a Success Alert - Check it now!"
-      disableHover
+      text="success! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="warning"
       variant="contained"
-      text="Warning! This is a Warning Alert - Check it now!"
-      disableHover
+      text="warning! This is a Primary Alert - Check it now!"
     />
-  </div>
+  </AlertContainer>
 );
 
-export const OutlineAlerts = () => (
-  <StyledContainer>
+
+export const OutlineAlert = () => (
+  <AlertContainer>
     <AlertComponent
       type="primary"
       variant="outline"
-      text="Primary! This is a Primary Alert - Check it now!"
       isOutline
-      disableHover
+      text="Primary! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
-      type="textcolorgray"
-      variant="outlined"
-      text="Secondary! This is a Secondary Alert - Check it now!"
+      type="secondary"
+      variant="outline"
       isOutline
-      disableHover
+      text="secondary! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="success"
-      variant="outlined"
-      text="Success! This is a Success Alert - Check it now!"
+      variant="outline"
       isOutline
-      disableHover
+      text="success! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="warning"
-      variant="outlined"
-      text="Primary! This is a Warning Alert - Check it now!"
+      variant="outline"
       isOutline
-      disableHover
+      text="warning! This is a Primary Alert - Check it now!"
     />
-  </StyledContainer>
+  </AlertContainer>
 );

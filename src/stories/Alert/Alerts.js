@@ -1,25 +1,18 @@
-import React from 'react';
-import { AlertStyle } from './Alerts.style';
+import React from "react";
+import { AlertStyles,OutlineAlertStyle } from "./Alerts.style";
 
-export const AlertComponent = ({
-  type,
-  variant,
-  text,
-  icon,
-  isOutline,
-  border,
-  disableHover,
-}) => {
-  return (
-    <AlertStyle
-      type={type}
-      variant={variant}
-      isOutline={isOutline}
-      border={border}
-      disableHover={disableHover}
-    >
-      {text}{' '}
-    </AlertStyle>
-  );
+
+export const AlertComponent = ({ type, variant, text }) => {
+
+
+  if(variant=="contained"){
+    return(
+      <AlertStyles type={type} >{text}</AlertStyles>
+    )
+  }
+  if(variant=="outline"){
+    return(
+    <OutlineAlertStyle type={type} >{text}</OutlineAlertStyle>)
+  }
+  return null;
 };
-

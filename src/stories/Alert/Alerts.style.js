@@ -1,38 +1,37 @@
-import styled, { css } from 'styled-components';
-import theme from '../../theme';
+import styled, { css } from "styled-components";
+import theme from "../../theme";
 
-export const AlertStyle = styled.button`
-  font-size: 1.4;
-  font-weight: 600;
-  border: 2px solid;
+
+export const AlertStyles = styled.button`
   width: 100%;
-  gap: 1rem;
-  ${({ type, isOutline, border }) => css`
-    background-color: ${isOutline ? 'transparent' : theme?.[type]};
-    color: ${isOutline ? theme?.[type] : 'white'};
-    border-color: ${border || '1px solid'};
-    font-style: italic;
-  `}
-  padding: 10px 20px;
+  border-radius: 3px;
+  font-family: sans-serif;
   text-align: left;
-  text-decoration: none;
+  border: 1px solid ${theme.whitecolor};
+  padding: 10px 20px;
+  font-family: "Rubik", sans-serif;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   cursor: pointer;
-  ${({ type, isOutline, disableHover }) => css`
-    background-color: ${isOutline ? 'transparent' : theme?.[type]};
-    color: ${isOutline ? theme?.[type] : 'white'};
-    ${!disableHover &&
-    css`
-      &:hover,
-      &:active {
-        background-color: ${isOutline ? theme?.[type] : theme?.[type]};
-        color: white;
-      }
-    `}
-  `}
+  color: ${({ type }) =>
+    type === "secondary" ? theme?.[type] : theme.whitecolor};
+
+
+  background-color: ${({ type }) =>
+    type === "secondary" ? theme.white : theme?.[type]};
 `;
 
-export const StyledContainer = styled.div`
+
+export const OutlineAlertStyle=styled(AlertStyles)`
+  background-color: transparent;
+  border: 1px solid ${({type})=>theme?.[type]};
+  color: ${({type})=>theme?.[type]};
+
+
+`
+export const AlertContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 `;
