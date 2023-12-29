@@ -8,7 +8,7 @@ export default {
 };
 
 export const ContainedAlert = () => (
-  <AlertContainer>
+    <AlertContainer>
     <AlertComponent
       type="primary"
       variant="contained"
@@ -17,19 +17,19 @@ export const ContainedAlert = () => (
     <AlertComponent
       type="secondary"
       variant="contained"
-      text="secondary! This is a Primary Alert - Check it now!"
+      text="Secondary! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="success"
       variant="contained"
-      text="success! This is a Primary Alert - Check it now!"
+      text="Success! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="warning"
       variant="contained"
-      text="warning! This is a Primary Alert - Check it now!"
+      text="Warning! This is a Primary Alert - Check it now!"
     />
-  </AlertContainer>
+     </AlertContainer>
 );
 
 export const OutlineAlert = () => (
@@ -44,19 +44,19 @@ export const OutlineAlert = () => (
       type="secondary"
       variant="outline"
       isOutline
-      text="secondary! This is a Primary Alert - Check it now!"
+      text="Secondary! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="success"
       variant="outline"
       isOutline
-      text="success! This is a Primary Alert - Check it now!"
+      text="Success! This is a Primary Alert - Check it now!"
     />
     <AlertComponent
       type="warning"
       variant="outline"
       isOutline
-      text="warning! This is a Primary Alert - Check it now!"
+      text="Warning! This is a Primary Alert - Check it now!"
     />
   </AlertContainer>
 );
