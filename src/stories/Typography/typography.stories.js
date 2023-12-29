@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Typography from './Typography';
+import Typography from './typography';
 import { StyledTextContainer } from './Typography.styled';
 
 export default {
