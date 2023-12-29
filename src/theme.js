@@ -15,6 +15,5 @@ const theme = {
   buttonOutlinedSecondaryColorHover: '#fff',
   danger: '#FF3D00',
   badgeText: '#fff',
-  
 };
 export default theme;
