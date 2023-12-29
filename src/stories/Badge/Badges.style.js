@@ -31,9 +31,7 @@ export const BadgeIcon = styled.div`
   background-color: ${({ colortype }) => theme?.[colortype]};
   border-radius: 50%;
   display: inline-block;
-  border: 2px solid;
-  border-color: white;
-  
+  border: 2px solid ${theme.white}; 
 `;
 
 export const BadgeForIcon = styled(BadgeIcon)`
