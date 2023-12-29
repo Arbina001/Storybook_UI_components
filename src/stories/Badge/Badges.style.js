@@ -22,7 +22,6 @@ export const AvatarImage = styled.img`
 
 export const BadgeIcon = styled.div`
   position: absolute;
-  bottom: 0;
   left: 52%;
   border-color: ${theme.white};
   top: 66%;
@@ -34,6 +33,7 @@ export const BadgeIcon = styled.div`
   display: inline-block;
   border: 2px solid;
   border-color: white;
+  
 `;
 
 export const BadgeForIcon = styled(BadgeIcon)`
