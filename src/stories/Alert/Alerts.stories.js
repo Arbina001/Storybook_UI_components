@@ -1,13 +1,11 @@
-import React from "react";
-import { AlertComponent } from "./Alerts";
-import { AlertContainer } from "./Alerts.style";
-
+import React from 'react';
+import { AlertComponent } from './Alerts';
+import { AlertContainer } from './Alerts.style';
 
 export default {
-  title: "Alert",
+  title: 'Alert',
   component: AlertComponent,
 };
-
 
 export const ContainedAlert = () => (
   <AlertContainer>
@@ -33,7 +31,6 @@ export const ContainedAlert = () => (
     />
   </AlertContainer>
 );
-
 
 export const OutlineAlert = () => (
   <AlertContainer>
