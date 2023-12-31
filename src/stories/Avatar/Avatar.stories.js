@@ -1,9 +1,9 @@
-import React from "react";
-import { Avatar } from "./Avatar";
-import { StyledAvatarContainer } from "./Avatar.Styled";
+import React from 'react';
+import { Avatar } from './Avatar';
+import { StyledAvatarContainer } from './Avatar.Styled';
 
 export default {
-  title: "Avatar",
+  title: 'Avatar',
   component: Avatar,
 };
 
