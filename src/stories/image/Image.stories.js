@@ -1,28 +1,28 @@
 import React from 'react';
 import { Image } from './Image';
-import { ImageContainer } from './Image.styled';
+import { StyledImageContainer } from './Image.styled';
 
 export default {
   title: 'Images',
 };
 
-export const SquareImage = () => (
-  <ImageContainer>
+export const squareImage = () => (
+  <StyledImageContainer>
     <Image
       url="https://picsum.photos/352/350/?blur"
       alt="squareImage"
-      shape="Square"
+      shape="square"
     />
     <Image
       url="https://picsum.photos/351/350/?blur"
       alt="squareImage"
-      shape="Square"
+      shape="square"
     />
-  </ImageContainer>
+  </StyledImageContainer>
 );
 
 export const CircleImage = () => (
-  <ImageContainer>
+  <StyledImageContainer>
     <Image
       url="https://picsum.photos/355/350/?blur"
       alt="circleImage"
@@ -33,15 +33,15 @@ export const CircleImage = () => (
       alt="circleImage"
       shape="circle"
     />
-  </ImageContainer>
+  </StyledImageContainer>
 );
 
 export const MainImage = () => (
-  <ImageContainer>
+  <StyledImageContainer>
     <Image
       url="https://picsum.photos/359/350/?blur"
       alt="MainImage"
       shape="full"
     />
-  </ImageContainer>
+  </StyledImageContainer>
 );

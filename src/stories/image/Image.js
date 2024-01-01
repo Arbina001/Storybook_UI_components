@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageStyle, CircleImage, MainImage } from './Image.styled';
 
 export const Image = ({ url, alt, shape }) => {
-  if (shape === 'Square') {
+  if (shape === 'square') {
     return <ImageStyle src={url} alt={alt}></ImageStyle>;
   }
 
@@ -13,5 +13,4 @@ export const Image = ({ url, alt, shape }) => {
   if (shape === 'full') {
     return <MainImage src={url} alt={alt}></MainImage>;
   }
-  // return null;
 };
