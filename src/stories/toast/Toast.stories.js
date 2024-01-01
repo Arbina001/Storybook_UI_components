@@ -1,15 +1,15 @@
-import React from "react";
-import { Toast } from "./Toast";
-import { ToastContainer } from "./Toast.styled";
+import React from 'react';
+import { Toast } from './Toast';
+import { StyledToastContainer } from './Toast.styled';
 
 export default {
-  title: "Toast ",
+  title: 'Toast ',
 };
 
 export const SimpleActionToast = () => (
-  <ToastContainer>
+  <StyledToastContainer>
     <Toast text="Successful toast for user action." type="success" />
     <Toast text="Warning toast for user action." type="warning" />
     <Toast text="danger toast for user action." type="danger" />
-    </ToastContainer>
+  </StyledToastContainer>
 );

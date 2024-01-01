@@ -1,6 +1,6 @@
 import React from 'react';
-import { ToastStyled } from './Toast.styled';
+import { StyledToast } from './Toast.styled';
 
 export const Toast = ({ type, text }) => {
-  return <ToastStyled type={type}>{text}</ToastStyled>;
+  return <StyledToast type={type}>{text}</StyledToast>;
 };
