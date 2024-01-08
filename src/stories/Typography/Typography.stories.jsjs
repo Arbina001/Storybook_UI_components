@@ -1,0 +1,55 @@
+// Typography.stories.js
+
+// Typography.stories.js
+
+import React from 'react';
+import TypographyComponent from './TypographyComponent'; // Make sure the path is correct
+import { StyledTextContainer } from './Typography.styled.jsjs';
+
+// Rest of the file remains the same
+
+export default {
+  title: 'Typography',
+  component: TypographyComponent,
+};
+
+export const HeadingTypography = () => (
+  <StyledTextContainer>
+    <TypographyComponent as="h1" text="H1. Adorn Box heading" />
+    <TypographyComponent as="h2" text="H2. Adorn Box heading" />
+    <TypographyComponent as="h3" text="H3. Adorn Box heading" />
+    <TypographyComponent as="h4" text="H4. Adorn Box heading" />
+    <TypographyComponent as="h5" text="H5. Adorn Box heading" />
+    <TypographyComponent as="h6" text="H6. Adorn Box heading" />
+  </StyledTextContainer>
+);
+
+export const FontColors = () => (
+  <StyledTextContainer>
+    <TypographyComponent
+      as="p"
+      text="Adorn Box text with primary color"
+      type="primary"
+    />
+    <TypographyComponent
+      as="p"
+      text="Adorn Box text with primary color"
+      type="primary"
+    />
+    <TypographyComponent
+      as="p"
+      text="Adorn Box text with success color"
+      type="success"
+    />
+    <TypographyComponent
+      as="p"
+      text="Adorn Box text with danger color"
+      type="danger"
+    />
+    <TypographyComponent
+      as="p"
+      text="Adorn Box text with warning color"
+      type="warning"
+    />
+  </StyledTextContainer>
+);

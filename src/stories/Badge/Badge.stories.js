@@ -1,9 +1,9 @@
 import React from 'react';
-import Badge from "./Badge";
+import Badge from './Badge';
 import { BadgesContainer } from './Badges.style';
 
 export default {
-  title: 'Badge',
+  heading: 'Badge',
   component: Badge,
 };
 

@@ -4,7 +4,7 @@ import Button from './Button';
 import { StyledContainer } from './Button.style';
 
 export default {
-  title: 'Buttons',
+  heading: 'Buttons',
   component: Button,
 };
 

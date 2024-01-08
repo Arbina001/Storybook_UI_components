@@ -3,12 +3,12 @@ import { AlertComponent } from './Alerts';
 import { AlertContainer } from './Alerts.style';
 
 export default {
-  title: 'Alert',
+  heading: 'Alert',
   component: AlertComponent,
 };
 
 export const ContainedAlert = () => (
-    <AlertContainer>
+  <AlertContainer>
     <AlertComponent
       type="primary"
       variant="contained"
@@ -29,7 +29,7 @@ export const ContainedAlert = () => (
       variant="contained"
       text="Warning! This is a Primary Alert - Check it now!"
     />
-     </AlertContainer>
+  </AlertContainer>
 );
 
 export const OutlineAlert = () => (

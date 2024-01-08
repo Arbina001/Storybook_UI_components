@@ -3,7 +3,7 @@ import { Avatar } from './Avatar';
 import { StyledAvatarContainer } from './Avatar.Styled';
 
 export default {
-  title: 'Avatar',
+  heading: 'Avatar',
   component: Avatar,
 };
 
